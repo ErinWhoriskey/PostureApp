@@ -1,18 +1,17 @@
-# Audio alert helper (Windows winsound + fallback)
-import sys
+# audio alert helper for posture warnings
 
-def play_alert(audio_enabled=True, volume=100):
+def play_alert(audio_enabled=True):
     if not audio_enabled:
         return False
 
-    # Try a WAV then fall back to Beep.
+    # use a simple windows beep
     try:
         import winsound
-        # Simple beep (reliable)
         winsound.Beep(1500, 200)
         return True
     except Exception:
         return False
 
-def test_alert(audio_enabled=True, volume=100):
-    return play_alert(audio_enabled, volume)
+
+def test_alert(audio_enabled=True):
+    return play_alert(audio_enabled)
