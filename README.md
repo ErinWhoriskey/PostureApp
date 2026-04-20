@@ -71,3 +71,6 @@ python -m pytest tests -v
 
 ### No body detected
 ![No body detected](docs/images/no-body-detected.png)
+
+### Test run example
+![Pytest test results](docs/images/pytest-tests-passed.png)
