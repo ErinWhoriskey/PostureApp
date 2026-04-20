@@ -31,7 +31,9 @@ pip install -r requirements.txt
 
 ## How To Run
 Run the application from the project folder:
+```bash
 python app/postureDetectionApp.py
+```
 
 ## Testing
 This project includes automated pytest unit tests for key helper modules.
