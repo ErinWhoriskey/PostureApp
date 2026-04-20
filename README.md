@@ -14,10 +14,13 @@ A webcam-based posture detection application built in Python using OpenCV, Media
 - Uploaded video analysis
 - Session logging and stats view
 - Automated pytest tests
+- GitHub Actions workflow for automated test runs
 
 ## Project Structure
 - `app/` - main application code
 - `tests/` - automated pytest test files
+- `docs/images/` - screenshots used in the documentation
+- `.github/workflows/` - GitHub Actions workflow for automated testing
 
 ## Requirements
 Install the required packages:
@@ -25,6 +28,10 @@ Install the required packages:
 ```bash
 pip install -r requirements.txt
 ```
+
+## How To Run
+Run the application from the project folder:
+python app/postureDetectionApp.py
 
 ## Testing
 This project includes automated pytest unit tests for key helper modules.
@@ -39,6 +46,17 @@ To run the tests:
 ```bash
 python -m pytest tests -v
 ```
+The project also includes a GitHub Actions workflow to run the tests automatically on pushes and pull requests.
+
+## Technologies used
+- Python
+- OpenCV
+- MediaPipe
+- Tkinter
+- Pillow
+- Matplotlib
+- Pytest
+- GitHub Actions
 
 ## Screenshots
 
@@ -74,3 +92,9 @@ python -m pytest tests -v
 
 ### Test run example
 ![Pytest test results](docs/images/pytest-tests-passed.png)
+
+
+## Future Improvements
+- add more automated tests
+- improve the visual design of the interface
+- add a progressive reminder system
